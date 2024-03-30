@@ -19,10 +19,10 @@ const Tasklist = ({ todos, setTodos }) => {
                     {todos.map((todo, index) => (
                         <li id={`list-${index}`} key={index} className="list">
                             {todo}
-
-                            <input type="checkbox" className="check" />
-                            <MdDelete fontSize={27} className="icon" id="del" onClick={(event) => deletethis(index, event)} />
-
+                            <div className='list-items'>
+                                <input type="checkbox" className="check" />
+                                <MdDelete fontSize={27} className="icon" id="del" onClick={(event) => deletethis(index, event)} />
+                            </div>
                         </li>
                     ))}
                 </ul>

@@ -1,5 +1,5 @@
 import './App.css' 
-import Taskinput from './comp/Taskinput'
+import Taskinput from './components/Taskinput'
 
 function App() {
   return(
